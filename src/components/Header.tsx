@@ -2,6 +2,7 @@
 import { Search, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,28 +11,28 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-syntra-navy">
+            <Link to="/" className="text-2xl font-bold text-syntra-navy">
               Syntra
-            </div>
+            </Link>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-700 hover:text-syntra-cyan transition-colors">
-              Why Syntra?
-            </a>
-            <a href="#" className="text-gray-700 hover:text-syntra-cyan transition-colors">
+            <Link to="/features" className="text-gray-700 hover:text-syntra-cyan transition-colors">
               Features
-            </a>
-            <a href="#" className="text-gray-700 hover:text-syntra-cyan transition-colors">
+            </Link>
+            <Link to="/hackathons" className="text-gray-700 hover:text-syntra-cyan transition-colors">
               Hackathons
-            </a>
-            <a href="#" className="text-gray-700 hover:text-syntra-cyan transition-colors">
+            </Link>
+            <Link to="/resources" className="text-gray-700 hover:text-syntra-cyan transition-colors">
               Resources
-            </a>
-            <a href="#" className="text-gray-700 hover:text-syntra-cyan transition-colors">
+            </Link>
+            <Link to="/community" className="text-gray-700 hover:text-syntra-cyan transition-colors">
+              Community
+            </Link>
+            <Link to="/pricing" className="text-gray-700 hover:text-syntra-cyan transition-colors">
               Pricing
-            </a>
+            </Link>
           </nav>
 
           {/* Right side */}
