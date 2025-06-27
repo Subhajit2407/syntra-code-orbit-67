@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +65,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Syntra brand colors
+				syntra: {
+					navy: '#1F2937',
+					cyan: '#3B82F6',
+					yellow: '#FACC15',
+					purple: '#8B5CF6',
+					'purple-light': '#A78BFA',
+					gray: '#F9FAFB'
 				}
 			},
 			borderRadius: {
@@ -84,11 +97,38 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'orbit': {
+					'0%': {
+						transform: 'rotate(0deg) translateX(120px) rotate(0deg)'
+					},
+					'100%': {
+						transform: 'rotate(360deg) translateX(120px) rotate(-360deg)'
+					}
+				},
+				'orbit-reverse': {
+					'0%': {
+						transform: 'rotate(0deg) translateX(80px) rotate(0deg)'
+					},
+					'100%': {
+						transform: 'rotate(-360deg) translateX(80px) rotate(360deg)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'orbit': 'orbit 20s linear infinite',
+				'orbit-reverse': 'orbit-reverse 15s linear infinite',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},
