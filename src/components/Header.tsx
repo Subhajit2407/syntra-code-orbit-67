@@ -1,57 +1,57 @@
 
-import { Search } from "lucide-react";
+import { Search, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 bg-transparent">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="text-xl font-semibold text-gray-900">
+            <Link to="/" className="text-2xl font-bold text-syntra-navy">
               Syntra
             </Link>
           </div>
 
-          {/* Navigation - Hidden on mobile */}
+          {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/features" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              Why Syntra?
-            </Link>
-            <Link to="/features" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+            <Link to="/features" className="text-gray-700 hover:text-syntra-cyan transition-colors">
               Features
             </Link>
-            <Link to="/hackathons" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+            <Link to="/hackathons" className="text-gray-700 hover:text-syntra-cyan transition-colors">
               Hackathons
             </Link>
-            <Link to="/resources" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+            <Link to="/resources" className="text-gray-700 hover:text-syntra-cyan transition-colors">
               Resources
             </Link>
-            <Link to="/pricing" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+            <Link to="/community" className="text-gray-700 hover:text-syntra-cyan transition-colors">
+              Community
+            </Link>
+            <Link to="/pricing" className="text-gray-700 hover:text-syntra-cyan transition-colors">
               Pricing
             </Link>
           </nav>
 
           {/* Right side */}
           <div className="flex items-center space-x-4">
-            {/* Search - Hidden on small screens */}
-            <div className="relative hidden lg:block">
+            {/* Search */}
+            <div className="relative hidden sm:block">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
               <Input
                 type="search"
-                placeholder="Search Syntra"
-                className="pl-10 w-48 bg-white border-gray-300 focus:border-blue-500 focus:ring-blue-500 rounded-lg text-sm"
+                placeholder="Search..."
+                className="pl-10 w-64 bg-gray-50 border-gray-200 focus:border-syntra-cyan"
               />
             </div>
 
             {/* Auth buttons */}
-            <Button variant="ghost" className="hidden sm:inline-flex text-sm font-medium text-gray-700 hover:text-gray-900">
+            <Button variant="ghost" className="hidden sm:inline-flex">
               Sign In
             </Button>
-            <Button className="bg-gray-900 hover:bg-gray-800 text-white text-sm font-medium px-4 py-2 rounded-lg">
+            <Button className="bg-syntra-cyan hover:bg-blue-600 text-white">
               Sign Up
             </Button>
           </div>
