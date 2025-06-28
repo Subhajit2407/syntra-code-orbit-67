@@ -1,5 +1,4 @@
-
-import { Kanban, List, Timeline, Video, MessageSquare } from "lucide-react";
+import { Kanban, List, Calendar, Video, MessageSquare } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
@@ -29,7 +28,7 @@ const Dashboard = () => {
                 Task List
               </TabsTrigger>
               <TabsTrigger value="timeline" className="flex items-center gap-2">
-                <Timeline className="w-4 h-4" />
+                <Calendar className="w-4 h-4" />
                 Timeline
               </TabsTrigger>
             </TabsList>
@@ -172,7 +171,7 @@ const Dashboard = () => {
             <p className="text-gray-600">Team Messages</p>
           </Card>
           <Card className="p-6 text-center">
-            <Timeline className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+            <Calendar className="w-12 h-12 text-purple-600 mx-auto mb-4" />
             <h3 className="font-semibold text-lg mb-2">24</h3>
             <p className="text-gray-600">Completed Tasks</p>
           </Card>

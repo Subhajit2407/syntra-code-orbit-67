@@ -1,5 +1,5 @@
 
-import { Github, MessageCircle, Code, Users, Zap, Star, kanban, list, timeline, video } from "lucide-react";
+import { Github, MessageCircle, Code, Users, Zap, Star, Kanban, List, Calendar, Video } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -71,25 +71,25 @@ const Hero = () => {
         {/* New additional floating icons */}
         <div className="absolute top-48 left-1/3 animate-float delay-400">
           <div className="bg-white rounded-xl shadow-lg p-3 border border-gray-100">
-            <kanban className="w-6 h-6 text-indigo-600" />
+            <Kanban className="w-6 h-6 text-indigo-600" />
           </div>
         </div>
 
         <div className="absolute bottom-52 right-1/4 animate-float delay-900">
           <div className="bg-white rounded-xl shadow-lg p-3 border border-gray-100">
-            <list className="w-6 h-6 text-cyan-600" />
+            <List className="w-6 h-6 text-cyan-600" />
           </div>
         </div>
 
         <div className="absolute top-80 left-1/5 animate-float delay-1100">
           <div className="bg-white rounded-xl shadow-lg p-3 border border-gray-100">
-            <timeline className="w-6 h-6 text-orange-600" />
+            <Calendar className="w-6 h-6 text-orange-600" />
           </div>
         </div>
 
         <div className="absolute bottom-72 left-1/2 animate-float delay-1400">
           <div className="bg-white rounded-xl shadow-lg p-3 border border-gray-100">
-            <video className="w-6 h-6 text-red-600" />
+            <Video className="w-6 h-6 text-red-600" />
           </div>
         </div>
 
