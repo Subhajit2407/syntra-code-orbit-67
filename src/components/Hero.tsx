@@ -1,6 +1,5 @@
 
-import { Button } from "@/components/ui/button";
-import { Github, MessageCircle, Code, Users, Zap, Star } from "lucide-react";
+import { Github, MessageCircle, Code, Users, Zap, Star, kanban, list, timeline, video } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -38,7 +37,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Floating icons and elements */}
+        {/* Floating icons and elements - Enhanced with more icons */}
         <div className="absolute top-40 left-1/4 animate-float delay-700">
           <div className="bg-white rounded-xl shadow-lg p-3 border border-gray-100">
             <Code className="w-6 h-6 text-blue-600" />
@@ -69,6 +68,37 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* New additional floating icons */}
+        <div className="absolute top-48 left-1/3 animate-float delay-400">
+          <div className="bg-white rounded-xl shadow-lg p-3 border border-gray-100">
+            <kanban className="w-6 h-6 text-indigo-600" />
+          </div>
+        </div>
+
+        <div className="absolute bottom-52 right-1/4 animate-float delay-900">
+          <div className="bg-white rounded-xl shadow-lg p-3 border border-gray-100">
+            <list className="w-6 h-6 text-cyan-600" />
+          </div>
+        </div>
+
+        <div className="absolute top-80 left-1/5 animate-float delay-1100">
+          <div className="bg-white rounded-xl shadow-lg p-3 border border-gray-100">
+            <timeline className="w-6 h-6 text-orange-600" />
+          </div>
+        </div>
+
+        <div className="absolute bottom-72 left-1/2 animate-float delay-1400">
+          <div className="bg-white rounded-xl shadow-lg p-3 border border-gray-100">
+            <video className="w-6 h-6 text-red-600" />
+          </div>
+        </div>
+
+        <div className="absolute top-36 left-2/3 animate-float delay-1700">
+          <div className="bg-white rounded-xl shadow-lg p-3 border border-gray-100">
+            <Github className="w-6 h-6 text-gray-700" />
+          </div>
+        </div>
+
         {/* Decorative elements */}
         <div className="absolute top-44 left-2/3 animate-float delay-400">
           <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-full w-3 h-3"></div>
@@ -76,6 +106,14 @@ const Hero = () => {
 
         <div className="absolute bottom-80 left-1/3 animate-float delay-900">
           <div className="bg-gradient-to-r from-green-500 to-blue-500 rounded-full w-2 h-2"></div>
+        </div>
+
+        <div className="absolute top-64 right-1/5 animate-float delay-1300">
+          <div className="bg-gradient-to-r from-pink-500 to-orange-500 rounded-full w-4 h-4"></div>
+        </div>
+
+        <div className="absolute bottom-96 right-2/3 animate-float delay-1600">
+          <div className="bg-gradient-to-r from-yellow-500 to-red-500 rounded-full w-3 h-3"></div>
         </div>
       </div>
 
@@ -104,24 +142,6 @@ const Hero = () => {
         <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed">
           — all right next to your code. Syntra enables healthy and productive software collaboration.
         </p>
-
-        {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-          <Button 
-            size="lg" 
-            className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2"
-          >
-            Enable discussions
-            <span className="text-gray-400">→</span>
-          </Button>
-          <Button 
-            variant="ghost" 
-            size="lg" 
-            className="text-gray-700 hover:text-gray-900 px-8 py-4 text-lg font-semibold transition-all duration-200 underline decoration-2 underline-offset-4"
-          >
-            Watch video
-          </Button>
-        </div>
       </div>
     </section>
   );
