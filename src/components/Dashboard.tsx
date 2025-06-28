@@ -1,5 +1,5 @@
 
-import { kanban, list, timeline, video, message-square } from "lucide-react";
+import { Kanban, List, Timeline, Video, MessageSquare } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
@@ -21,15 +21,15 @@ const Dashboard = () => {
           <Tabs defaultValue="kanban" className="w-full">
             <TabsList className="grid w-full grid-cols-3 max-w-md mx-auto">
               <TabsTrigger value="kanban" className="flex items-center gap-2">
-                <kanban className="w-4 h-4" />
+                <Kanban className="w-4 h-4" />
                 Kanban
               </TabsTrigger>
               <TabsTrigger value="list" className="flex items-center gap-2">
-                <list className="w-4 h-4" />
+                <List className="w-4 h-4" />
                 Task List
               </TabsTrigger>
               <TabsTrigger value="timeline" className="flex items-center gap-2">
-                <timeline className="w-4 h-4" />
+                <Timeline className="w-4 h-4" />
                 Timeline
               </TabsTrigger>
             </TabsList>
@@ -162,17 +162,17 @@ const Dashboard = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           <Card className="p-6 text-center">
-            <video className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+            <Video className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h3 className="font-semibold text-lg mb-2">12</h3>
             <p className="text-gray-600">Active Projects</p>
           </Card>
           <Card className="p-6 text-center">
-            <message-square className="w-12 h-12 text-green-600 mx-auto mb-4" />
+            <MessageSquare className="w-12 h-12 text-green-600 mx-auto mb-4" />
             <h3 className="font-semibold text-lg mb-2">89</h3>
             <p className="text-gray-600">Team Messages</p>
           </Card>
           <Card className="p-6 text-center">
-            <timeline className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+            <Timeline className="w-12 h-12 text-purple-600 mx-auto mb-4" />
             <h3 className="font-semibold text-lg mb-2">24</h3>
             <p className="text-gray-600">Completed Tasks</p>
           </Card>
